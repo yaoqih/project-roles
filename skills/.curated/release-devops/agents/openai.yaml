@@ -1,0 +1,3 @@
+interface:
+  display_name: "Release DevOps"
+  short_description: "Run safe releases and operational guardrails"
