@@ -32,6 +32,34 @@ $skill-installer install https://github.com/yaoqih/project-roles/tree/main/skill
 
 批量安装时，重复给出多个技能路径即可（每个路径都指向一个含 `SKILL.md` 的目录）。
 
+## Install With Node CLI (`npx skills`)
+
+本仓库结构兼容 `vercel-labs/skills` 的自动发现规则（包含 `skills/.curated/`）。
+
+列出本仓库可安装技能：
+
+```bash
+npx skills add yaoqih/project-roles --list
+```
+
+安装到当前项目（交互选择 agent/skill）：
+
+```bash
+npx skills add yaoqih/project-roles
+```
+
+一键安装所有技能到所有已检测 agent：
+
+```bash
+npx skills add yaoqih/project-roles --all
+```
+
+仅安装指定技能到指定 agent（示例：Codex + Claude Code）：
+
+```bash
+npx skills add yaoqih/project-roles --skill solution-architect --skill code-reviewer --agent codex --agent claude-code -y
+```
+
 ## Available Skills
 
 1. `code-reviewer` - Review code changes for quality, security, performance, and maintainability with actionable, prioritized feedback.
