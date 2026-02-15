@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan & Agent Orchestrator"
+  short_description: "Cross-project planning and Codex skill orchestration"
+  default_prompt: "Use $plan-and-agent-orchestrator to read codex.md command formats, create a phased plan, dispatch specialist skills, run Codex tasks in parallel where safe, and re-plan from evidence."
